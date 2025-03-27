@@ -3,8 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title>Case2</title>
+    <link rel="stylesheet" href="lib/normalize.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-6.7.2-web/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #1596e3;
+            margin: 0;
+        }
+
+        .circle-container {
+            position: relative;
+            width: 300px;
+            aspect-ratio: 1/1;
+        }
+
+        .circle {
+            width: 100%;
+            height: 100%;
+            border: 10px solid white;
+            border-radius: 50%;
+            background: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: white;
+            position: relative;
+        }
+
+        .circle::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 10px solid transparent;
+            border-top: 10px solid red;
+            border-radius: 100%;
+
+        }
+
+        .circle-container:hover .circle::before {
+            animation: rotate 1s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 <body>
+<div class="circle-container">
+    <div class="circle"><h1>RWAD</h1></div>
+</div>
 
+<script src="lib/fontawesome-free-6.7.2-web/js/all.js"></script>
 </body>
 </html>
