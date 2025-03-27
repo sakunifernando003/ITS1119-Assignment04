@@ -3,8 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>Case3</title>
+    <link rel="stylesheet" href="lib/normalize.css">
+    <style>
+
+
+
+        div{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            border-radius: 20px;
+
+            animation: rotate-move 3s ease alternate infinite ;
+
+        }
+
+        @keyframes rotate-move {
+            0%{
+                top: 0;
+                left: 0;
+                background-color: orange;
+            }
+
+            25%{
+                top: 0;
+                left: 800px;
+                background-color: yellow;
+                transform: rotate(180deg);
+
+            }
+
+            50%{
+                left: 800px;
+                bottom: 0;
+                transform: rotate(360deg);
+                background-color: #ff253a;
+            }
+
+            75%{
+                left: 0;
+                bottom: 0;
+                transform: rotate(180deg);
+                background-color: green;
+
+            }
+
+            100%{
+                left: 0;
+                top: 0;
+                transform: rotate(360deg);
+                background-color: palevioletred;
+
+            }
+        }
+
+    </style>
 </head>
 <body>
+
+    <div></div>
+
+
 
 </body>
 </html>
