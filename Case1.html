@@ -5,12 +5,35 @@
     <title>Case1</title>
     <link rel="stylesheet" href="lib/normalize.css">
     <style>
-        nav>div{
-            width: 300px;
-            height: 50px;
-            background-color: purple;
-            margin: 40px;
 
+        nav{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            height: fit-content;
+        }
+
+        nav>div{
+            width: 200px;
+            height: 25px;
+            background-color: #784be0;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: -175px;
+            font-size: 20px;
+            padding: 10px;
+            box-shadow: black;
+
+
+        }
+
+        nav>div:hover{
+            margin-left: 0;
+            transition-duration: 2s;
         }
 
 
@@ -20,11 +43,22 @@
 </head>
 <body>
 <nav>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div>Menu One
+        <div><i class="fa-solid fa-user icon"></i></div>
+    </div>
+    <div>Menu Two
+        <div><i class="fa-solid fa-globe icon"></i></div>
+    </div>
+    <div>Menu Three
+        <div><i class="fa-solid fa-file icon"></i></div>
+    </div>
+    <div>Menu Four
+        <div><i class="fa-solid fa-cart-plus icon"></i></div>
+    </div>
+    <div>Menu Five
+        <div><i class="fa-solid fa-truck icon"></i></div>
+    </div>
+
 </nav>
 
 
