@@ -3,8 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title>Case5</title>
+    <link rel="stylesheet" href="lib/normalize.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .slider {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            width: 400%;
+            animation: slide 30s infinite  alternate-reverse;
+        }
+
+        .slides img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            20% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-100%);
+            }
+            45% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(-200%);
+            }
+            70% {
+                transform: translateX(-200%);
+            }
+            75% {
+                transform: translateX(-300%);
+            }
+            95% {
+                transform: translateX(-300%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+    </style>
 </head>
 <body>
+<div class="slider">
+    <div class="slides">
+        <img src="assets/slide1.jpeg" alt="Image 1">
+        <img src="assets/slide2.jpeg" alt="Image 2">
+        <img src="assets/slide3.jpeg" alt="Image 3">
+        <img src="assets/slide4.jpeg" alt="Image 4">
 
+    </div>
+</div>
 </body>
 </html>
